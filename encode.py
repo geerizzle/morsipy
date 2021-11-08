@@ -54,7 +54,7 @@ def encode_morse(text: str):
     message = ''
     for letter in text:
         if letter == ' ':
-            message += ' \ '
+            message += ' / '
         else:
             message += morse[letter.lower()]
 

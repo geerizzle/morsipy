@@ -17,6 +17,7 @@ if __name__ == "__main__":
                 text = recognizer.recognize_google(audio)
                 text = text.lower()
                 print(f"Recognized: {text}")
+                print(encode.encode_morse(text))
             except:
                 recognizer = speech_recognition.Recognizer()
                 continue
